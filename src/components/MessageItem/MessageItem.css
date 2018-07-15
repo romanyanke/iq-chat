@@ -1,0 +1,80 @@
+.MessageItem {
+  display: flex;
+  height: 67px;
+}
+
+.MessageItem.isOpened {
+  background: var(--blue);
+  color: #ffffff;
+}
+
+.MessageItem.isOpened .MessageItem-text,
+.MessageItem.isOpened .MessageItem-date {
+  color: #ffffff;
+}
+
+.MessageItem-column._avatar {
+  flex: 0 0 67px;
+  width: 67px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MessageItem-column._body {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.MessageItem-column._meta {
+  flex: 0 1 100px;
+  padding-right: 16px;
+  text-align: right;
+}
+
+.MessageItem-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+  background: #ccc;
+  overflow: hidden;
+}
+
+.MessageItem-name {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.MessageItem-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #666;
+  width: 100%;
+}
+
+.MessageItem-date {
+  font-size: 12px;
+  color: #666;
+  padding-top: 14px;
+}
+
+.MessageItem-unread-count {
+  background: var(--blue);
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 6px;
+}

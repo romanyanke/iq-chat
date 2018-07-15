@@ -1,0 +1,8 @@
+.MessageButtons {
+  background: var(--blue);
+  padding: 1rem;
+}
+
+.MessageButtons button {
+  margin-right: 1rem;
+}

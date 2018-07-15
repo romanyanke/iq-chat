@@ -1,0 +1,7 @@
+.MessageList {
+  flex: 1;
+}
+
+.MessageList-Item {
+  outline: 1px solid #ddd;
+}
